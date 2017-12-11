@@ -3,6 +3,6 @@
 	"Statement": {
 		"Effect": "Allow",
 		"Action": "sts:AssumeRole",
-		"Resource": "arn:aws:iam:::role/IAM-Master-Role"
+		"Resource": "arn:aws:iam:::role/IAMMasterRole"
 	}
 }
