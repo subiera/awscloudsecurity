@@ -1,0 +1,32 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: "Creates an AWS SNS Topic then creates multiple SNS Subscriptions to the created Topic - By default Email has been selected as the protocol"
+Resources:
+   SNSTopic1:
+      Type: "AWS::SNS::Topic"
+      Properties:
+         DisplayName: 
+         TopicName: 
+   SNSSubscription1:
+      Type: AWS::SNS::Subscription
+      Properties:
+         Endpoint: 
+         Protocol: email
+         TopicArn: !Ref 'SNSTopic1'
+   SNSSubscription2:
+      Type: AWS::SNS::Subscription
+      Properties:
+         Endpoint: 
+         Protocol: email
+         TopicArn: !Ref 'SNSTopic1'
+   SNSSubscription3:
+      Type: AWS::SNS::Subscription
+      Properties:
+         Endpoint: 
+         Protocol: email
+         TopicArn: !Ref 'SNSTopic1'
+   SNSSubscription4:
+      Type: AWS::SNS::Subscription
+      Properties:
+         Endpoint: 
+         Protocol: email
+         TopicArn: !Ref 'SNSTopic1'
